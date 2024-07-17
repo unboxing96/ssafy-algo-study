@@ -32,7 +32,7 @@
 - 유형별 추천 문제: https://github.com/tony9402/baekjoon/tree/main?tab=readme-ov-file
 
 ## 깃허브 제출 방법
-![image](./github.PNG)
+![image](./wdwd.png)
 
 1. 시작
     1. if 처음 프로젝트를 생성한다면, `git clone {github repo 주소}`
@@ -51,13 +51,21 @@
 7. `git push origin {나의 브랜치명 == 현재 작업 중인 브랜치명}`
     - 문제 생기면 팀원들에게 바로 공유!
 
-8. 새로운 작업 시작
+8. (Optional) github 돌아가서 해당 레포 상단에 Pull Request 생성 (초록 버튼): 
+	1. 타겟 브랜치 설정: `{dev}` <- `{나의 브랜치명 == 방금 작업 완료한 브랜치명}`
+	2. 상세 커밋 내용 작성 (자동 완성 사용해도 무방)
 
-    9. `git pull origin dev` (1-2번을 수행한 것과 동일)
+9. (Optional) github에서 Merge
+	1. if 문제 없으면, `Approved` -> Merge
+	2. else if 문제 있으면, Conflict 해결 -> `Approved` -> Merge
 
-    10. 새로운 주차 폴더 생성
+10. 새로운 작업 시작
 
-    11. 다시 2번으로 돌아가서 반복...
+    11. `git pull origin dev` (1-2번을 수행한 것과 동일)
+
+    12. 새로운 주차 폴더 생성
+
+    13. 다시 2번으로 돌아가서 반복...
 
 ## 폴더 트리 구조 (참고)
 ![image](./tree.png)
