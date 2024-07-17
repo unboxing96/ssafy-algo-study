@@ -63,8 +63,8 @@
         2. 상세 커밋 내용 작성 (자동 완성 사용해도 무방)
 
     2. github에서 Merge
-        1. if 문제 없으면, `Approved` -> Merge
-        2. else if 문제 있으면, Conflict 해결 -> `Approved` -> Merge
+        1. if 문제 없으면, `Approved` -> `Merge`
+        2. else if 문제 있으면, Conflict 해결 -> `Approved` -> `Merge`
 
     3. Pull Request가 자동으로 생기지 않으면?
         - [git clone으로 협업하기](https://velog.io/@rkio/git-clone%EC%9C%BC%EB%A1%9C-%ED%98%91%EC%97%85%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90)
