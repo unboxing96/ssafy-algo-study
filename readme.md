@@ -32,7 +32,7 @@
 - 유형별 추천 문제: https://github.com/tony9402/baekjoon/tree/main?tab=readme-ov-file
 
 ## 깃허브 제출 방법
-![image](./github.png)
+![image](./repo.png)
 
 1. 시작
     1. if 처음 프로젝트를 생성한다면, `git clone {github repo 주소}`
