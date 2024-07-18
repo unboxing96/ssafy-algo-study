@@ -51,7 +51,7 @@
 
 5. `git add .`
 
-6. `git commit -m "제목 : 문제 제목 혹은 번호"` 
+6. `git commit -m "feat : {문제 제목 혹은 번호}"` 
 
 7. `git push origin {나의 브랜치명 == 현재 작업 중인 브랜치명}`
     - 문제 생기면 팀원들에게 바로 공유!
