@@ -51,20 +51,21 @@
 
 5. `git add .`
 
-6. `git commit -m "제목 : 문제 제목 혹은 번호"` 
+6. `git commit -m "feat : {문제 제목 혹은 번호}"` 
 
 7. `git push origin {나의 브랜치명 == 현재 작업 중인 브랜치명}`
     - 문제 생기면 팀원들에게 바로 공유!
 
 8. Pull Request
 
-    1. github 돌아가서 해당 레포 상단에 Pull Request 생성 (초록 버튼): 
+    1. github 돌아가서 해당 레포 상단에 Pull Request 생성 (초록색 `Compare & pull request` 버튼): 
         1. 타겟 브랜치 설정: `{dev}` <- `{나의 브랜치명 == 방금 작업 완료한 브랜치명}`
         2. 상세 커밋 내용 작성 (자동 완성 사용해도 무방)
+        3. 초록색 `Create pull request` 버튼 클릭
 
     2. github에서 Merge
-        1. if 문제 없으면, `Approved` -> `Merge`
-        2. else if 문제 있으면, Conflict 해결 -> `Approved` -> `Merge`
+        1. if 문제 없으면, `Merge pull request` -> `Confirm merge`
+        2. else if 문제 있으면, Conflict 해결 -> `Merge pull request` -> `Confirm merge`
 
     3. Pull Request가 자동으로 생기지 않으면?
         - [git clone으로 협업하기](https://velog.io/@rkio/git-clone%EC%9C%BC%EB%A1%9C-%ED%98%91%EC%97%85%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90)
@@ -73,7 +74,7 @@
 
     1. `{나의 브랜치명}`에서 `git pull origin dev` (1-2번을 수행한 것과 동일)
 
-    2. 새로운 주차 폴더 생성
+    2. 새로운 주차 디렉토리 하위에 본인 디렉토리 생성
 
     3. 다시 2번으로 돌아가서 반복...
 
