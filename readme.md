@@ -58,13 +58,14 @@
 
 8. Pull Request
 
-    1. github 돌아가서 해당 레포 상단에 Pull Request 생성 (초록 버튼): 
+    1. github 돌아가서 해당 레포 상단에 Pull Request 생성 (초록색 `Compare & pull request` 버튼): 
         1. 타겟 브랜치 설정: `{dev}` <- `{나의 브랜치명 == 방금 작업 완료한 브랜치명}`
         2. 상세 커밋 내용 작성 (자동 완성 사용해도 무방)
+        3. 초록색 `Create pull request` 버튼 클릭
 
     2. github에서 Merge
-        1. if 문제 없으면, `Approved` -> `Merge`
-        2. else if 문제 있으면, Conflict 해결 -> `Approved` -> `Merge`
+        1. if 문제 없으면, `Merge pull request` -> `Confirm merge`
+        2. else if 문제 있으면, Conflict 해결 -> `Merge pull request` -> `Confirm merge`
 
     3. Pull Request가 자동으로 생기지 않으면?
         - [git clone으로 협업하기](https://velog.io/@rkio/git-clone%EC%9C%BC%EB%A1%9C-%ED%98%91%EC%97%85%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90)
