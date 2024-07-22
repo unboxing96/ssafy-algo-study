@@ -18,4 +18,3 @@ for puls_or_multiply in range(len(S)):
     else: 
         result = result * int(S[puls_or_multiply])
 
-print(result)
