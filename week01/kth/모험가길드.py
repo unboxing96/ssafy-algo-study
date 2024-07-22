@@ -16,23 +16,40 @@ sys.stdin = open("모험가길드.txt", "r")
         # tmp_group = [] # 초기화
         # tmp_group_max_num = 0 # 초기화
 
+# 틀린 풀이
+# n = int(input())
+# arr = list(map(int, input().split()))
+
+# arr.sort()
+
+# result = 0
+# tmp_group = []
+# tmp_group_max_num = 0
+
+# while arr:
+#     tmp = arr.pop()
+#     tmp_group.append(tmp)
+#     tmp_group_max_num = max(tmp_group)
+
+#     if len(tmp_group) == tmp_group_max_num:
+#         result += 1
+#         tmp_group = []
+#         tmp_group_max_num = 0
+
+# print(result)
+
 n = int(input())
 arr = list(map(int, input().split()))
-
 arr.sort()
 
 result = 0
-tmp_group = []
-tmp_group_max_num = 0
+count = 0
 
-while arr:
-    tmp = arr.pop()
-    tmp_group.append(tmp)
-    tmp_group_max_num = max(tmp_group)
+for elem in arr:
+    count += 1
 
-    if len(tmp_group) == tmp_group_max_num:
+    if count >= elem:
         result += 1
-        tmp_group = []
-        tmp_group_max_num = 0
+        count = 0
 
 print(result)
