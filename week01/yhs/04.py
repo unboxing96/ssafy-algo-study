@@ -9,7 +9,7 @@ sum_coin = coins[0]
 
 # 가장 작은 화폐단위가 2 이상일 경우
 if coins[0] > 1:
-    print(coins[0]-1)
+    print(1)
 
 
 else:
