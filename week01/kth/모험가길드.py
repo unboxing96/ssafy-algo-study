@@ -38,18 +38,26 @@ sys.stdin = open("모험가길드.txt", "r")
 
 # print(result)
 
-n = int(input())
-arr = list(map(int, input().split()))
-arr.sort()
+def solution(n, arr):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort()
 
-result = 0
-count = 0
+    result = 0
+    count = 0
 
-for elem in arr:
-    count += 1
+    for elem in arr:
+        count += 1
 
-    if count >= elem:
-        result += 1
-        count = 0
+        if count >= elem:
+            result += 1
+            count = 0
 
+    return result
+
+n = 7
+arr = [6, 1, 1, 1, 2, 2, 3]
+result = solution(n, arr)
 print(result)
+
+[1, 1, 1, 2, 2, 3, 6]
