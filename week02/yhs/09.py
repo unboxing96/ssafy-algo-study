@@ -39,5 +39,3 @@ def solution(s):
 
 s = input()
 print(solution(s))
-
-
