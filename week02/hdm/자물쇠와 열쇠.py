@@ -2,6 +2,8 @@ import sys
 
 sys.stdin = open('input.txt')
 
+
+# 아직 못품...
 def solution(key, lock):
     answer = True
     return answer
