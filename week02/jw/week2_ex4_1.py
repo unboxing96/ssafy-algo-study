@@ -1,6 +1,7 @@
 N = int(input())
 route = list(map(str, input().split()))
 
+
 x, y = 1, 1
 
 for i in route:
