@@ -9,6 +9,7 @@ empty_map = [[0]*M for _ in range(N)]
  [0, 0, 0, 0]
  ]
 '''
+
 empty_map[A][B] = 1 # 처음 내 위치, 육지임
 
 # 맵 정보 입력

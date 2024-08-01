@@ -1,6 +1,7 @@
 def solution(s):
     s_length = len(s)
 
+
     # 길이가 n이면 2//n까지 자를 수 있는 경우의 수가 생김, 홀수여도 n//2 까지
 
     for i in range(1,s_length//2 + 1): # 1개자르기 ~ n//2개 자르기, (i개자르기)
