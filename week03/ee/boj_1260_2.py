@@ -2,6 +2,9 @@
 # 인접 행렬 말고 인접 리스트로 해 보기
 # 방문 처리 리스트 하나만 써서 해 보기
 #######################################
+import sys
+
+sys.stdin = open('1260_input.txt')
 
 N, M, v = map(int, input().split()) # N: 노드 개수, M: 간선 개수, V: 시작 노드
 
@@ -33,11 +36,20 @@ def dfs(graph, v, visited):
             dfs(graph, i, visited)
 
 dfs(graph, v, visited)
+print()
 
 from collections import deque
 
 # BFS
 def bfs(graph, v, visited):
     queue = deque([v])
-    visited[v] = False
-    print(v, end = ' ')
+    visited[v] = False # 방문 처리 저장 리스트 재활용하기(반대로 저장)
+    while queue:
+        v = queue.popleft()
+        print(v, end= ' ')
+        for i in graph[v]:
+            if visited[i]: #방문안했으면(반대니깐 not 안 씀)
+                queue.append(i)
+                visited[i] = False
+
+bfs(graph, v, visited)
