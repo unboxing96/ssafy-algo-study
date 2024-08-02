@@ -18,11 +18,12 @@ def adjacency_list(datas, N):
         i, j = data
         matrix[i].append(j)
         matrix[j].append(i)
-        
+        matrix[i].sort() #정렬해주기~~!
+        matrix[j].sort()
     return matrix
 
 graph = adjacency_list(datas, N)
-print(graph)
+# print(graph)
 
 visited = [False] * (N+1)
 
@@ -30,7 +31,7 @@ visited = [False] * (N+1)
 def dfs(graph, v, visited):
     visited[v] = True
     print(v, end = ' ')
-
+    # print(graph[v])
     for i in graph[v]:
         if not visited[i]:
             dfs(graph, i, visited)
