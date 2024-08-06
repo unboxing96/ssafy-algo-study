@@ -1,5 +1,6 @@
 import sys
 sys.stdin = open('1012_input.txt')
+sys.setrecursionlimit(1000000) # 재귀 깊이 제한 늘리기
 
 def dfs(grounds, x, y, M, N):
 
@@ -13,7 +14,6 @@ def dfs(grounds, x, y, M, N):
         if 0 <= nx < M and 0 <= ny < N and grounds[ny][nx] == 1:
             dfs(grounds, nx, ny, M, N)
 
-
 T = int(sys.stdin.readline().strip())  # 테스트 케이스 수
 
 for tc in range(T):
@@ -24,9 +24,6 @@ for tc in range(T):
     for x, y in cabbages:
         grounds[y][x] = 1
 
-    # for row in grounds:
-    #     print(row)
-    
     count = 0  # 배추흰지렁이 마리 수
 
     for i in range(M):
@@ -35,10 +32,5 @@ for tc in range(T):
                 dfs(grounds, i, j, M, N)
                 count += 1
                     
-    print(count)
+    print(count) 
 
-# 테케 답은 나오는데 
-# 백준에 넣으면 에러 ㅠ ㅠ ㅠ ㅠ ㅠ
-# 근데 졸려서
-# 내일 할게요 .. . . .
-# ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠ ㅠㅠ 
