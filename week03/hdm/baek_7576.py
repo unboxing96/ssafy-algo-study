@@ -3,11 +3,8 @@ from collections import deque
 sys.stdin = open('input.txt')
 
 
-# 익은토마토 4방향의 익지않은 토마토가 있으면 다 익음.
+## 7576
 
-# 1 = 익은 토마토
-# 0 = 익지 않은 토마토
-# -1 = 토마토가 들어있지 않음.
 
 def bfs(graph, start):
     queue = deque(start) # deque를 사용하여 BFS를 위한 큐 초기화.
@@ -54,3 +51,5 @@ for r in range(N):
 
 print(days - 1) # 첫날 시작점 arr[r][c]를 1로 시작해줌. 따라서 1일차에 익은것으로 간주되기에
                 # 익은날을 확인하기 위해서 -1해주는것임.
+
+
