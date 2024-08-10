@@ -130,3 +130,21 @@ print(max_safe_area)
 
 # or bfs로 바이러스 퍼트리기
 # virus_musawa = (safe_count(bfs(matrix), row, col))
+
+
+
+# walls를 재귀가 아닌, for문으로 반복하게 된다면?
+# walls(N)
+#     for i1 in range(N):
+#         for i2 in range(N):
+#             if i2 != i1:
+#                 for i3 in range(N):
+#                     if i3 != i1 and i3 != i2:
+#                         selected = [zero_spaces[i1], zero_spaces[i2], zero_spaces[i3]]
+#
+#                         matrix_copy = deepcopy(matrix)  # 연구소 복사
+#                         for r, c in selected:
+#                             matrix_copy[r][c] = 1  # 벽 세우기
+#
+#                         virus_musawa = safe_count(bfs(matrix_copy), row, col)  # 바이러스 확산 후 안전 영역 계산
+#                         max_safe_area = max(max_safe_area, virus_musawa)  # 최대값 업데이트
