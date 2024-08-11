@@ -222,3 +222,4 @@ $RECYCLE.BIN/
 *.txt
 test.*
 *.DS_Store
+*.xml
