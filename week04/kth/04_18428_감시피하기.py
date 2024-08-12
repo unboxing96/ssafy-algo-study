@@ -1,10 +1,10 @@
 # 문제 분석
 # 벽 세우고, 4방으로 모든 방향 델타 탐색
 
-import copy
 import sys
 sys.stdin = open("04_18428_감시피하기.txt")
 
+import copy
 
 def make_wall(cnt):
     if cnt == 3:
@@ -37,8 +37,8 @@ def search():
                 if new_matrix[nx][ny] == "O":
                     break
                 if new_matrix[nx][ny] == "S":
-                    return False
-    return True
+                    return False # 학생 마주치면 발각
+    return True # 마주치지 못 하면 숨기 성공
 
 
 n = int(input())
