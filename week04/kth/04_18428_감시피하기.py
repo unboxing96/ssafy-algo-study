@@ -25,12 +25,10 @@ def search():
 
     for x, y in stack:
         for i in range(4):
-            nx = x
-            ny = y
+            nx = x + dx[i]
+            ny = y + dy[i]
 
             while True:
-                nx += dx[i]
-                ny += dy[i]
 
                 if nx < 0 or ny < 0 or nx >= n or ny >= n:
                     break
@@ -38,6 +36,10 @@ def search():
                     break
                 if new_matrix[nx][ny] == "S":
                     return False # 학생 마주치면 발각
+                
+                nx += dx[i]
+                ny += dy[i]
+                
     return True # 마주치지 못 하면 숨기 성공
 
 
