@@ -2,25 +2,10 @@ import sys
 sys.stdin = open('input.txt')
 from collections import deque
 
-""""
-# M * N 시험관이 있다.
-1X1크기의 칸으로 나누어지고 특정한 위치에는 바이러스가 존재 할 수 있다.   
-상하좌우 증식 / 단 매초마다 전호가 낮은 종류의 바이러스부터 증식함.  
-이미 바이러스가 존재하면 그곳에는 다른 바이러스 X 못들어가 
-
-S초가 지난 후에 X,Y에 존재하는 바이러스의 종류를 출력하는 프로그램.
-해당초 해당 위치에 바이러스 없으면 0출력
-X,Y는 각각 행렬 의미. 1,1기준으로 시작할것임. 
-
-각 초가 지난이후에는 각 바이러스가 빈자리에만 뿌리기. 단 숫자가 낮은것 먼저 진행.
-
-"""
 
 N, K = map(int, input().split())
 matrix = [list(map(int,input().split())) for _ in range(N)]
 S, X, Y = map(int,input().split()) #각자 잘들어와야됨
-
-# start_point = [(r, c) for r in range(N) for c in range(N) if matrix[r][c] != 0]
 
 
 
