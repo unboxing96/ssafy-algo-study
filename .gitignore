@@ -223,3 +223,6 @@ $RECYCLE.BIN/
 test.*
 *.DS_Store
 *.xml
+
+# my ignore
+my_algo/
