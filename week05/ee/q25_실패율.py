@@ -11,7 +11,7 @@ def solution(N, stages):
     for i in range(1, N+1):
         per[i-1][0] = i # 인덱스 저장
         if counts[i][1]:
-            per[i-1][1] = counts[i][0] / counts[i][1] # 실패율율
+            per[i-1][1] = counts[i][0] / counts[i][1] # 실패율
        else:
             per[i-1][1] = 0 # 스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 0 으로 정의한다.
 
