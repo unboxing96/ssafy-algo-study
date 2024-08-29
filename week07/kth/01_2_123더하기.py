@@ -40,24 +40,33 @@ sys.stdin = open("01_2_123더하기.txt")
 # 1 + 1 + 3
 # 2 + 3
 
-def get_123_composition(num):
-    if dp[num]:
-        return dp[num]
+# def get_123_composition(num):
+#     if dp[num]:
+#         return dp[num]
     
-    if num == 1:
-        dp[num] = 1
-    elif num == 2:
-        dp[num] = 2
-    elif num == 3:
-        dp[num] = 4
-    else:
-        dp[num] = get_123_composition(num - 1) + get_123_composition(num - 2) + get_123_composition(num - 3)
+#     if num == 1:
+#         dp[num] = 1
+#     elif num == 2:
+#         dp[num] = 2
+#     elif num == 3:
+#         dp[num] = 4
+#     else:
+#         dp[num] = get_123_composition(num - 1) + get_123_composition(num - 2) + get_123_composition(num - 3)
     
-    return dp[num]
+#     return dp[num]
 
 
 T = int(input())
 for _ in range(T):
     n = int(input())
-    dp = [0] * (n + 1)
-    print(get_123_composition(n))
+    dp = [0] * (12)
+    dp[1] = 1
+    dp[2] = 2
+    dp[3] = 4
+
+    for i in range(4, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
+    
+    print(dp[n])
+
+    # print(get_123_composition(n))
