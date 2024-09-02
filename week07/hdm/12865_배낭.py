@@ -5,16 +5,15 @@ N, K = map(int, input().split())  # 물건수 N / 무게 K
 arr = [list(map(int, input().split())) for _ in range(N)]  # [[1, 10], [7, 10], [3, 1], [5, 0]]
 dp = [0] * (K + 1) # 무게별 최대 가치 기록
 
-for i in range(N):
-    weight, value = arr[i]  # 무게와 가치를 뽑아낸 후
-
-    if value == 0:
-        continue
+for weight,value in arr:
 
     for j in range(K, weight -1, -1):
         dp[j] = max(dp[j], dp[j-weight] + value)
 
 print(max(dp))
+
+
+
 
 """
 N개의 물건
