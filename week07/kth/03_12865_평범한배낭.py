@@ -13,7 +13,7 @@ for _ in range(n):
     bags.append(list(map(int, input().split())))
 
 for i in range(1, n + 1): # 물건 개수만큼
-    weight, value = bags[i][0], bags[i][1]
+    weight, value = bags[i - 1][0], bags[i - 1][1]
 
     for weight_limit in range(1, k + 1): # 무게 한계만큼
         if weight_limit < weight: # 한계 무게보다 현재 무게가 크다면 담을 수 없다.
