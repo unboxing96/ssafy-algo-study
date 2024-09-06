@@ -226,3 +226,5 @@ test.*
 
 # my ignore
 my_algo/
+test.py
+test.txt
