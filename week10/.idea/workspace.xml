@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8830ba05-cccd-4eb1-a0b1-0c46d663e92c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hdm/src/day1/약수구하기_2501/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdm/src/day1/이진수_3460/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdm/src/day1/이진수_3460/이진수.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdm/src/day1/최소최대10818/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdm/src/day1/최소최대10818/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/week10.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdm/src/day1/약수구하기_2501/약수구하기.java" beforeDir="false" afterPath="$PROJECT_DIR$/hdm/src/day1/약수구하기_2501/약수구하기.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
