@@ -10,9 +10,9 @@ import java.util.Arrays;
 public class 약수구하기 {
     public static void main(String[] args) throws IOException {
 
-        String filePath = "hdm/src/day1/약수구하기_2501/input.txt";
-        BufferedReader br = new BufferedReader(new FileReader(filePath));
-//         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String filePath = "hdm/src/day1/약수구하기_2501/input.txt";
+//        BufferedReader br = new BufferedReader(new FileReader(filePath));
+         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
         String[] values = br.readLine().split(" ");
